@@ -1,20 +1,15 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <section id="header">
+      <h1 class="title">David Arteaga</h1>
+      <h3>Desarrollador web</h3>
+      <hr>
+    </section>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+      <li><a target="_blank" href="http://twitter.com/soydavidarteaga"><i class="fab fa-twitter"></i></a></li>
+      <li><a target="_blank" href="https://instagram.com/yosoydavidarteaga"><i class="fab fa-instagram"></i></a></li>
+      <li><a target="_blank" href="https://medium.com/soydavidarteaga"><i class="fab fa-medium"></i></a></li>
+      <li><a target="_blank" href="http://linkedin.com/david7art"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </div>
 </template>
@@ -31,16 +26,42 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
+body{
+  background:#000;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background:#000;
+  margin-top: 250px;
 }
 
-h1, h2 {
+#header {
+  line-height: 0.2;
+  h1{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+  h3{
+    color:#fff;
+    font-family: 'Roboto Mono',monospace;
+    font-weight: 300;
+  }
+  hr{
+    border: 10px solid #002858;
+    margin-left:25%;
+    margin-right: 25%;
+  }
+}
+
+h2 {
   font-weight: normal;
 }
 
@@ -51,10 +72,11 @@ ul {
 
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5%;
 }
 
 a {
-  color: #42b983;
+  color: #fff;
+  font-size: 2rem;
 }
 </style>
