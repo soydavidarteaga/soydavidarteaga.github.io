@@ -5,9 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Arteaga - Desarrollador web</title>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script src="./dist/build.js"></script>
+    <!--Navegacion Sencilla-->
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">David Arteaga</span>
+    </nav>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="box medium-box">
+              <div class="title">
+                <h2>Mira los Posts que tengo en Medium</h2>
+              </div>
+              <div class="content">
+                  <div id="medium-widget"></div>                
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+                <div class="title">
+                  <h4>Sigueme en instagram</h4>
+                </div>
+                <div class="content">
+                    <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/a21c5c4cfe2157c9b3e970532395efec.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+                </div>
+            </div>     
+            <div class="box">
+                <div class="title">
+                  <h4>Suscribete en mi canal de youtube</h4>
+                </div>
+                <div class="content">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/eHNNkKgdepI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                  
+                    <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="g-ytsubscribe" data-channel="geeklifeTech" data-layout="full" data-count="default"></div>
+                </div>
+            </div>                        
+            <div class="box">
+                <div class="title">
+                  <h4>Sigueme en twitter</h4>
+                </div>
+                <div class="content">
+                    <a class="twitter-timeline" data-height="700" href="https://twitter.com/soydavidarteaga?ref_src=twsrc%5Etfw">Tweets by soydavidarteaga</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>                                
+          </div>
+        </div>        
+      </div>
+    </section>
+
+    <script src="https://medium-widget.pixelpoint.io/widget.js"></script>
+    <script>MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/@soydavidarteaga","postsPerLine":3,"limit":200,"picture":"big","fields":["description","author","claps","likes","publishAt"],"ratio":"landscape"}})</script>
   </body>
 </html>

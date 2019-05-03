@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+body{
+    background:#ecf0f1;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.navbar{
+    border-bottom: 5px solid #2980b9;
+    justify-content: center;
+}
+.navbar-brand{
+    font-weight: 700;
+}
+
+.box{
+    background:#fff;
+    padding:20px;
+    margin-top:10px;
+}
+
+.box > .title {
+    text-align: center;
+}
+
+.medium-box > .title > h2{
+    text-align:center;
+}
